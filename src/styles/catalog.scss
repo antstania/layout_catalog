@@ -7,6 +7,7 @@
 
 .catalog {
   margin-top: 50px;
+  margin-bottom: 72px ;
 
   &__1 {
     @include with-centered-content;
@@ -147,9 +148,12 @@
     color: #34568b;
   }
 
-  .card__button {
-    background-color: #fff;
-  }
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.card__button:hover {
+  background-color: #fff;
 
   .card__button-title {
     color: #00acdc;
