@@ -121,10 +121,27 @@
       letter-spacing: 0;
       transition-duration: 300ms;
     }
+
+    &:hover {
+      background-color: #fff;
+
+      .card__button-title {
+        color: #00acdc;
+      }
+    }
   }
 
   &:nth-child(4n) {
     margin-right: 0;
+  }
+
+  &:hover {
+    .card__title {
+      color: #34568b;
+    }
+
+    transform: scale(1.2);
+    z-index: 1;
   }
 }
 
@@ -140,22 +157,5 @@
     &:nth-child(5n) {
       background-image: url(../images/star.svg);
     }
-  }
-}
-
-.card:hover {
-  .card__title {
-    color: #34568b;
-  }
-
-  transform: scale(1.2);
-  z-index: 1;
-}
-
-.card__button:hover {
-  background-color: #fff;
-
-  .card__button-title {
-    color: #00acdc;
   }
 }
